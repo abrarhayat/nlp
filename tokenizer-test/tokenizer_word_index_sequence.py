@@ -1,7 +1,7 @@
 from tensorflow.keras.preprocessing.sequence import pad_sequences
 from tensorflow.keras.preprocessing.text import Tokenizer
 
-from .utils import printSeq
+from utils import printSeq
 
 sentences = [
     'i love my dog',
@@ -14,7 +14,7 @@ tokenizer.fit_on_texts(sentences)
 word_index = tokenizer.word_index
 
 
-sequences = tokenizer.texts_to_sequences(sentences);
+sequences = tokenizer.texts_to_sequences(sentences)
 print(word_index, sequences)
 print('\n Sequences:')
 print(sequences)
